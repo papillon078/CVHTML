@@ -1,0 +1,174 @@
+                                                                                                                    /*aspect Généal*/
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'century gothic', calibri, serif;
+    font-size: 13px;
+    margin: 0px;/*reset des marges pour palier aux marges automatiques des navigateurs*/
+    padding: 0px;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+p{
+    font-size: 20px;
+}
+
+h3{
+    font-size: 20px;
+}
+/* mise en forme général du header, footer et de notre titre général*/
+h1{
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+}
+                                                                                                                    /* Style header et footer*/
+header{
+    position: fixed;       /*pour garder le menu visible qud on defile la page*/
+    top: 0px;
+    z-index: 1000;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+
+footer{
+    height: 80px;
+    padding-top: 30px;
+    text-align: center;
+    background-color: #7F85A8;
+    border-top: 4px solid #AAA;
+}
+
+                                                                                                                        /*Style du menu*/
+/*reset des marges pour palier aux marges automatiques des navigateurs*/
+nav ul{
+    margin: 0px;
+    padding: 0px;
+}
+/*extention de la barre de menu à toute la largeur de la page*/
+nav{
+    position: fixed;   /*pour garder le menu visible qud on defile la page*/
+    top: 100px;
+    z-index: 1000;
+    width: 100%;
+    background-color: #424558;
+}
+
+/*nous allons enlever les puces de notre liste menu et les aligner horizontalement*/
+nav li{
+    list-style-type:  none;
+    float: left;
+}
+
+/*Mise en forme des differents elements de liens de la barre de menus*/
+nav a{
+    display: inline-block; /*structure de base pour travailler sur leur forme*/
+    text-decoration: none;/* on retire les soulignement par defaut*/
+    padding: 20px 30px; /*pour avoir une case totalement cliquable*/
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.table{
+    display: table; /*pour rendre une consistance et une hauteur à notre élément qui est en float*/
+    margin: 0 auto; /* pour centrer les éléments de notre menu*/
+}
+
+                                                                                                              /*aspect et positionnement des sections*/
+article{
+  position : relative;
+  top: 160px;
+}
+.vert{
+    border-top : 5px solid #4C8;
+    background-color: #BA5536;
+}
+
+.orange{
+    border-top : 5px solid #e47D26;
+    background-color: #E2C399;   /*pour les section, on reprend les styles des menus quand on passait la souris dessus*/
+}
+
+.bleu{
+    border-top : 5px solid #0070bb;
+    background-color: #D5D5D1;
+}
+
+
+
+
+                                                                                                                /*aspect et positionnement des boites interieurs des pages*/
+
+section{
+    width: 100%;
+    min-height:300px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}
+
+.sec{
+    margin: 0px 5%;
+}
+
+.left{
+    float: left;
+    width: 30%;
+}
+
+.right{
+    margin-left: 2px;
+    float: right;
+    width: 65%;
+}
+
+.leftexp{
+    float: left;
+    width: 70%;
+}
+
+.rightexp{
+    float: left;
+    width: 30%;
+}
+
+.topexp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cleft, .cright, .sousleft, .sousright{
+    float:left;
+    width: 50%
+}
+
+/* le code suivant sert à eviter que les parties flotantes et les parties fixes ne se melangent*/
+.sec::after, .exp::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+                                                                                    /*Partie responsive pour s'adapter à tous les ecrans*/
+
+@media screen and (max-width: 780px){
+    header{height: 50px;}
+    h1{
+        font-size: 28px;
+        margin: 20px 0px 0px 0px;
+    }
+    nav li a{
+        font-size: 12px;
+        padding: 10px;
+    }
+    nav li:hover a{padding: 5px 10px 10px 10px;}
+    .sec{
+    margin: 0px 5%;
+    }
+    }
