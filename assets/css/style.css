@@ -8,7 +8,10 @@ body{
   margin: 0px;/*reset des marges pour palier aux marges automatiques des navigateurs*/
   padding: 0px;
 }
-
+.contact{
+  float: right;
+  margin-right: 50px;
+}
 img{
   max-width: 100%;
   height: auto;
