@@ -74,6 +74,14 @@ nav a{
   display: table; /*pour rendre une consistance et une hauteur à notre élément qui est en float*/
   margin: 0 auto; /* pour centrer les éléments de notre menu*/
 }
+.menu-hob:hover, .menu-ind:hover, .menu-exp:hover, .bleu, .vert, .orange{
+    border-top : 5px solid #0070bb;
+    background-color: rgba(000, 112, 192, 0.2);
+}
+/*losqu'on passe la souris sur un menu, l'effet de la marge de 5px, decale vers le bas le texte du menu. on remet de nouvelles marges en tenant compte de cela*/
+nav li:hover a{
+    padding: 15px 30px;
+}
 article{
   position : relative;
   top: 158px;
