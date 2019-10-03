@@ -127,6 +127,7 @@ article{
   }
 
   .left{
+    display: inline-block;
     float: left;
     width: 30%;
   }
@@ -152,7 +153,26 @@ article{
     flex-direction: row;
     justify-content: space-around;
   }
-
+  /* Barres de skill */
+  .container {
+    width: 80%; /* Full width */
+    background-color: #ddd; /* Grey background */
+  }
+  .skills {
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+  }
+  span{
+    float: right;
+  }
+  .html {
+    width: 90%; background-color: #4CAF50;
+    } /* Green */
+  .css {width: 80%; background-color: #2196F3;} /* Blue */
+  .js {width: 65%; background-color: #f44336;} /* Red */
+  .php {width: 60%; background-color: #808080;} /* Dark Grey */
   .cleft, .cright, .sousleft, .sousright{
     float:left;
     width: 50%
